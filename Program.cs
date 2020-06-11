@@ -8,11 +8,6 @@ namespace exam_42_2020
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            List<int> a = new List<int>() { -5, 8, 4, -8, -10, 12, 5, -14, 14 };
-            foreach (int[] item in GetZeroSumms(a))
-            {
-                Console.WriteLine($"({item[0]} : {item[1]})");
-            }
         }
         public static List<int[]> GetZeroSumms(List<int> list)
         {
