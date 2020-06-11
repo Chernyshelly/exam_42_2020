@@ -18,16 +18,23 @@ namespace exApp
             int j = vvod.Count - 1;
             while (j > i)
             {
-                while (Math.Abs(vvod[j]) > Math.Abs(vvod[i]))
-                {
-                    j--;
-                }
-
                 if (vvod[i] == 0 - vvod[j])
                 {
                     result.Add(new int[2] { vvod[i], vvod[j] });
+                    i++;
                 }
-                i++;
+                else
+                {
+                    if (Math.Abs(vvod[j]) > Math.Abs(vvod[i]))
+                    {
+                        j--;
+                    }
+                    else
+                    {
+                        i++;
+                    }
+                }
+                
             }
 
             return result;
