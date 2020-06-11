@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace exam_42_2020
+namespace exApp
 {
     class Program
     {
@@ -23,7 +23,7 @@ namespace exam_42_2020
                     j--;
                 }
 
-                if(vvod[i] == 0 - vvod[j])
+                if (vvod[i] == 0 - vvod[j])
                 {
                     result.Add(new int[2] { vvod[i], vvod[j] });
                 }
@@ -33,4 +33,5 @@ namespace exam_42_2020
             return result;
         }
     }
+
 }
